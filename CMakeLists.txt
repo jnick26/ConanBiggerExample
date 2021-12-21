@@ -13,7 +13,7 @@ enable_testing()
 add_executable(ComplexComponentTest ComplexComponentTest.cpp)
 
 # target_link_libraries(ComplexComponentTest ${CONAN_LIBS})
-target_link_libraries(ComplexComponentTest fmt gtest gmock gmock_main pthread)
+target_link_libraries(ComplexComponentTest fmt gtest gtest_main gmock gmock_main pthread)
 
 include(GoogleTest)
 gtest_discover_tests(ComplexComponentTest)
